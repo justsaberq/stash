@@ -1,7 +1,7 @@
 name: 节假日 Tile 面板
 desc: |-
   用于显示节假日的面板
-icon: raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Category_Popcorn.png
+icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Category_Popcorn.png
 category: ⚙️ ▸ Function
 
 tiles:
