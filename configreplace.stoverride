@@ -1,7 +1,7 @@
-﻿name: Stash 订阅转换
+name: Stash 订阅转换
 desc: |-
   自用修改版-使用此覆写会覆盖原配置对应字段的内容
-icon: https://raw.githubusercontent.com/Orz-3/face/master/Final.png
+icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/texon.png
 category: ⚙️ ▸ Function
 
 dns: #!replace

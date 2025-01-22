@@ -1,0 +1,14 @@
+name: IP 信息 Tile 面板
+desc: |-
+  用于显示 IP 信息的面板
+icon: httpse://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ip.png
+category: ⚙️ ▸ Function
+
+tiles:
+  - name: IPCheck-Tile
+    interval: 7200
+
+script-providers:
+  IPCheck-Tile:
+    url: https://raw.githubusercontent.com/StevenKwan/stash-waffle/main/tiles/ipcheck.js
+    interval: 86400
