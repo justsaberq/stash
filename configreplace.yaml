@@ -1,0 +1,389 @@
+dns:
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  fake-ip-filter:
+    - '+.lan'
+    - '*'
+    - '+.local'
+    - '+.cmpassport.com'
+    - 'id6.me'
+    - 'open.e.189.cn'
+    - 'mdn.open.wo.cn'
+    - 'opencloud.wostore.cn'
+    - 'auth.wosms.cn'
+    - '+.10099.com.cn'
+
+proxy-groups:
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+    name: 兜底分流
+    type: select
+    proxies:
+      - 自动切换
+      - 手动切换
+      - 香港节点
+      - 美国节点
+      - 狮城节点
+      - 日本节点
+      - 台湾节点
+      - DIRECT
+
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
+    name: 手动切换
+    type: select
+    include-all: true
+
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+    name: 自动切换
+    type: url-test
+    include-all: true
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
+    name: 国外网站
+    type: select
+    proxies:
+      - 自动切换
+      - 手动切换
+      - 香港节点
+      - 美国节点
+      - 狮城节点
+      - 日本节点
+      - 台湾节点
+
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+    name: 国际媒体
+    type: select
+    proxies:
+      - 自动切换
+      - 手动切换
+      - 香港节点
+      - 美国节点
+      - 狮城节点
+      - 日本节点
+      - 台湾节点
+
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png  
+    name: 微软服务
+    type: select
+    proxies:
+      - 自动切换
+      - 手动切换
+      - 香港节点
+      - 美国节点
+      - 狮城节点
+      - 日本节点
+      - 台湾节点
+
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
+    name: 谷歌服务
+    type: select
+    proxies:
+      - 自动切换
+      - 手动切换
+      - 香港节点
+      - 美国节点
+      - 狮城节点
+      - 日本节点
+      - 台湾节点
+
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+    name: 电报消息
+    type: select
+    proxies:
+      - 自动切换
+      - 手动切换
+      - 香港节点
+      - 美国节点
+      - 狮城节点
+      - 日本节点
+      - 台湾节点
+
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png
+    name: 推特消息
+    type: select
+    proxies:
+      - 自动切换
+      - 手动切换
+      - 香港节点
+      - 美国节点
+      - 狮城节点
+      - 日本节点
+      - 台湾节点
+
+  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png
+    name: AI
+    type: select
+    proxies:
+      - 自动切换
+      - 手动切换
+      - 香港节点
+      - 美国节点
+      - 狮城节点
+      - 日本节点
+      - 台湾节点
+
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png
+    name: 游戏平台
+    type: select
+    proxies:
+      - 自动切换
+      - 手动切换
+      - 香港节点
+      - 美国节点
+      - 狮城节点
+      - 日本节点
+      - 台湾节点
+      - DIRECT
+
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png
+    name: Emby
+    type: select
+    proxies:
+      - 香港节点
+      - 美国节点
+      - 狮城节点
+      - 日本节点
+      - 台湾节点
+
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
+    name: Spotify
+    type: select
+    proxies:
+      - 自动切换
+      - 手动切换
+      - 香港节点
+      - 美国节点
+      - 狮城节点
+      - 日本节点
+      - 台湾节点
+
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+    name: 香港节点
+    include-all: true
+    type: url-test
+    filter: "(?i)🇭🇰|香港|(\b(HK|Hong)\b)"
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
+    name: 美国节点
+    include-all: true
+    type: url-test
+    filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)"
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
+    name: 狮城节点
+    include-all: true
+    type: url-test
+    filter: "(?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)"
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
+    name: 日本节点
+    include-all: true
+    type: url-test
+    filter: "(?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)"
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png
+    name: 台湾节点
+    include-all: true
+    type: url-test
+    filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)"
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+
+rule-providers:
+  Lan:
+    type: http
+    behavior: classical
+    url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Lan.list
+    path: ./ruleset/Lan.yaml
+    interval: 86400
+
+  Reject:
+    type: http
+    behavior: classical
+    url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Reject.list
+    path: ./ruleset/Reject.yaml
+    interval: 86400
+
+  Apple:
+    type: http
+    behavior: classical
+    url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Apple.list
+    path: ./ruleset/Apple.yaml
+    interval: 86400
+
+  AppleProxy:
+    type: http
+    behavior: classical
+    url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/AppleProxy.list
+    path: ./ruleset/AppleProxy.yaml
+    interval: 86400
+
+  Microsoft:
+    type: http
+    behavior: classical
+    url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Microsoft.list
+    path: ./ruleset/Microsoft.yaml
+    interval: 86400
+
+  OneDrive:
+    type: http
+    behavior: classical
+    url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/OneDrive.list
+    path: ./ruleset/OneDrive.yaml
+    interval: 86400
+
+  Github:
+    type: http
+    behavior: classical
+    url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Github.list
+    path: ./ruleset/Github.yaml
+    interval: 86400
+
+  Youtube:
+    type: http
+    behavior: classical
+    url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/YouTube.list
+    path: ./ruleset/Youtube.yaml
+    interval: 86400
+
+  Google:
+    type: http
+    behavior: classical
+    url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Google.list
+    path: ./ruleset/Google.yaml
+    interval: 86400
+
+  Telegram:
+    type: http
+    behavior: classical
+    url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Telegram.list
+    path: ./ruleset/Telegram.yaml
+    interval: 86400
+
+  Twitter:
+    type: http
+    behavior: classical
+    url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Twitter.list
+    path: ./ruleset/Twitter.yaml
+    interval: 86400
+
+  Steam:
+    type: http
+    behavior: classical
+    url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Steam.list
+    path: ./ruleset/Steam.yaml
+    interval: 86400
+
+  Epic:
+    type: http
+    behavior: classical
+    url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Epic.list
+    path: ./ruleset/Epic.yaml
+    interval: 86400
+
+  AI:
+    type: http
+    behavior: classical
+    url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/AI.list
+    path: ./ruleset/AI.yaml
+    interval: 86400
+
+  Emby:
+    type: http
+    behavior: classical
+    url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Emby.list
+    path: ./ruleset/Emby.yaml
+    interval: 86400
+
+  Spotify:
+    type: http
+    behavior: classical
+    url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Spotify.list
+    path: ./ruleset/Spotify.yaml
+    interval: 86400
+
+  Bahamut:
+    type: http
+    behavior: classical
+    url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Bahamut.list
+    path: ./ruleset/Bahamut.yaml
+    interval: 86400
+
+  Netflix:
+    type: http
+    behavior: classical
+    url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Netflix.list
+    path: ./ruleset/Netflix.yaml
+    interval: 86400
+
+  Disney:
+    type: http
+    behavior: classical
+    url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Disney.list
+    path: ./ruleset/Disney.yaml
+    interval: 86400
+
+  PrimeVideo:
+    type: http
+    behavior: classical
+    url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/PrimeVideo.list
+    path: ./ruleset/PrimeVideo.yaml
+    interval: 86400
+
+  HBO:
+    type: http
+    behavior: classical
+    url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/HBO.list
+    path: ./ruleset/HBO.yaml
+    interval: 86400
+
+  TikTok:
+    type: http
+    behavior: classical
+    url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/TikTok.list
+    path: ./ruleset/TikTok.yaml
+    interval: 86400
+
+  ProxyGFW:
+    type: http
+    behavior: classical
+    url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/ProxyGFW.list
+    path: ./ruleset/ProxyGFW.yaml
+    interval: 86400
+
+rules:
+  - RULE-SET,Reject,REJECT
+  - RULE-SET,AI,AI
+  - RULE-SET,Github,微软服务
+  - RULE-SET,OneDrive,微软服务
+  - RULE-SET,Microsoft,微软服务
+  - RULE-SET,Youtube,谷歌服务
+  - RULE-SET,Google,谷歌服务
+  - RULE-SET,Twitter,推特消息
+  - RULE-SET,Telegram,电报消息
+  - RULE-SET,Steam,游戏平台
+  - RULE-SET,Epic,游戏平台
+  - RULE-SET,Emby,Emby
+  - RULE-SET,Bahamut,国际媒体
+  - RULE-SET,Netflix,国际媒体
+  - RULE-SET,Disney,国际媒体
+  - RULE-SET,PrimeVideo,国际媒体
+  - RULE-SET,HBO,国际媒体
+  - RULE-SET,TikTok,国际媒体
+  - RULE-SET,Spotify,Spotify
+  - RULE-SET,ProxyGFW,国外网站
+  - RULE-SET,AppleProxy,国外网站
+  - RULE-SET,Apple,DIRECT
+  - RULE-SET,Lan,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,兜底分流 
