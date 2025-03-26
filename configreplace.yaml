@@ -29,13 +29,13 @@ proxy-groups:
       - DIRECT
 
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|Tg|频道|订阅|ISP|流量|到期|重置|群组
     name: 手动切换
     type: select
     include-all: true
 
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|Tg|频道|订阅|ISP|流量|到期|重置|群组
     name: 自动切换
     type: url-test
     include-all: true
@@ -165,7 +165,7 @@ proxy-groups:
     name: 香港节点
     include-all: true
     type: url-test
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|Tg|频道|订阅|ISP|流量|到期|重置|群组
     filter: "(?i)🇭🇰|香港|(\b(HK|Hong)\b)"
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -174,7 +174,7 @@ proxy-groups:
     name: 美国节点
     include-all: true
     type: url-test
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|Tg|频道|订阅|ISP|流量|到期|重置|群组
     filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)"
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -183,7 +183,7 @@ proxy-groups:
     name: 狮城节点
     include-all: true
     type: url-test
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|Tg|频道|订阅|ISP|流量|到期|重置|群组
     filter: "(?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)"
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -192,7 +192,7 @@ proxy-groups:
     name: 日本节点
     include-all: true
     type: url-test
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|Tg|频道|订阅|ISP|流量|到期|重置|群组
     filter: "(?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)"
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -201,7 +201,7 @@ proxy-groups:
     name: 台湾节点
     include-all: true
     type: url-test
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|Tg|频道|订阅|ISP|流量|到期|重置|群组
     filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)"
     url: http://www.gstatic.com/generate_204
     interval: 300
